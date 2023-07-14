@@ -41,8 +41,8 @@ class Products extends React.Component {
           />
         </div>
         <div className="flex wrap">
-          {products.map((product) => (
-            <Product {...product} />
+          {products.map((product, key) => (
+            <Product key={key} {...product} />
           ))}
         </div>
       </div>
